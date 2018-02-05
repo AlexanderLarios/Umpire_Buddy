@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="logiclotus.umpirebuddy.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/strikeButton"
+        android:layout_width="115dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="64dp"
+        android:text="@string/strike"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ballButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ballButton"
+        android:layout_width="116dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/ball"
+        app:layout_constraintBottom_toBottomOf="@+id/strikeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/strikeButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/strikeTextView"
+        android:layout_width="22dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_0"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/strikeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/strikeText"
+        app:layout_constraintTop_toTopOf="@+id/strikeText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/ballTextView"
+        android:layout_width="22dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/strikeTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/strikeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/strikeTextView" />
+
+    <TextView
+        android:id="@+id/strikeText"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="144dp"
+        android:text="Strike:"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ballText"
+        android:layout_width="69dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ball:"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ballTextView"
+        app:layout_constraintEnd_toStartOf="@+id/ballTextView"
+        app:layout_constraintTop_toTopOf="@+id/ballTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

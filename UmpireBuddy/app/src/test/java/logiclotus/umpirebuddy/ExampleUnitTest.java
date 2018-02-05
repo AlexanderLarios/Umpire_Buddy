@@ -1,4 +1,4 @@
-package alexlarios.umpirebuddy;
+package logiclotus.umpirebuddy;
 
 import org.junit.Test;
 
